@@ -1,0 +1,1 @@
+// Type inference - Type inference in TypeScript is the process by which the typeScript compiler automatically determines the type of a variable, function, or expression based on the value assigned or the context in which it is used — without the developer explicitly specifying the type.
