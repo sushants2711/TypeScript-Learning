@@ -31,4 +31,4 @@ const product: Product = {
 };
 
 const totalPrice = ((product: Product): number => product.price * product.quantity);
-console.log(totalPrice(product)) 
+console.log(totalPrice(product))
