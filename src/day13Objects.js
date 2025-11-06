@@ -3,7 +3,12 @@
 // Values can be any type: number, string, boolean, array, function, or even another object.
 // Objects do not have order like arrays.
 // Objects are very useful for representing real - world entities with properties.
-// 2. Object with Type Annotation
+// There are 3 ways to define object 
+// type Annotation - imp
+// Using Type Alias - imp
+// Using Interface - imp
+// Object with Optional Properties
+// 1. Object with Type Annotation
 var person = {
     name: "Sushant",
     age: 22,
@@ -23,3 +28,9 @@ console.log(person["isStudent"]);
 console.log(person.address.state);
 console.log(person.address.city);
 console.log(person.address["pinCode"]);
+var product = {
+    name: "Laptop",
+    price: 400000,
+    quantity: 10
+};
+console.log("Product name is ".concat(product.name, " and the price is $").concat(product.price, " and the quantity is ").concat(product.quantity));

@@ -8,8 +8,13 @@
 
 // Objects are very useful for representing real - world entities with properties.
 
+// There are 3 ways to define object 
+// type Annotation - imp
+// Using Type Alias - imp
+// Using Interface - imp
+// Object with Optional Properties
 
-// 2. Object with Type Annotation
+// 1. Object with Type Annotation
 const person: { name: string, age: number, isStudent: boolean, college: string, address: { state: string, city: string, pinCode: number } } = {
     name: "Sushant",
     age: 22,
@@ -34,3 +39,13 @@ console.log(person.address.state);
 console.log(person.address.city);
 
 console.log(person.address["pinCode"]);
+
+
+
+const product: { name: string, price: number, quantity: number } = {
+    name: "Laptop",
+    price: 400000,
+    quantity: 10
+};
+
+console.log(`Product name is ${product.name} and the price is $${product.price} and the quantity is ${product.quantity}`)
