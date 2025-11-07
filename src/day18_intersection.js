@@ -1,20 +1,8 @@
 // Intersection - Intersection means combining multiple data types that all must be exist.
 // only those value that present in both 
-
-type a = string;
-type b = number;
-type c = boolean;
-
-type EmpDetails = {
-    name: a,
-    age: b,
-    isActive: c
-};
-
-const empData: EmpDetails = {
+var empData = {
     name: "sushant",
     age: 22,
     isActive: true
-}
-
+};
 console.log(empData);
