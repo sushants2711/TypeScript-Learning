@@ -49,3 +49,44 @@ const product: { name: string, price: number, quantity: number } = {
 };
 
 console.log(`Product name is ${product.name} and the price is $${product.price} and the quantity is ${product.quantity}`)
+
+// Define an object named company with the following properties and assign appropriate types to it:
+// name(string)
+// location(object) with properties:
+// city(string)
+// state(string)
+// zipCode(number)
+// employees(array of objects) with properties:
+// name(string)
+// id(number)
+// isFullTime(boolean)
+// establishedYear(number)
+// isPublic(boolean)
+// additionalInfo(null)
+
+const company: {
+    name: string;
+    location: { city: string; state: string; zipCode: number };
+    employees: {
+        name: string;
+        id: number;
+        isFullTime: boolean;
+    }[];
+    establishedYear: number;
+    isPublic: boolean;
+    additionalInfo: null;
+} = {
+    name: "Accenture",
+    location: {
+        city: "Bangalore",
+        state: "Karnatka",
+        zipCode: 560066,
+    },
+    employees: [
+        { name: "Alice", id: 101, isFullTime: true },
+        { name: "Bob", id: 102, isFullTime: false },
+    ],
+    establishedYear: 2001,
+    isPublic: true,
+    additionalInfo: null,
+};
